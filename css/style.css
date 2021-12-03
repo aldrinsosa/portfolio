@@ -94,3 +94,35 @@ a {
 .nav-menu_visible {
   top: 4.35rem;
 }
+
+.photo {
+  position: relative;
+  width: 100%;
+  min-width: 32rem;
+  height: 28.8rem;
+}
+
+.photo--imagen {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 16rem);
+  max-width: 34.8rem;
+  min-width: 32rem;
+  height: 34.9rem;
+  background-image: url(../images/logo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.photo--elipse {
+  position: absolute;
+  top: 2rem;
+  left: calc(50% - 15.45rem);
+  min-width: 30.9rem;
+  height: 34.9rem;
+  background-image: url(../images/Ellipse\ 1.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
