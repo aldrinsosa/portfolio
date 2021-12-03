@@ -45,10 +45,32 @@
   text-align: left;
 }
 
+.main-content {
+  flex-direction: row;
+}
+
 .photo--imagen {
-  left: calc(25% - 16rem);
+  left: calc(50% - 16rem);
 }
 
 .photo--elipse {
-  left: calc(25% - 15.45rem);
+  left: calc(50% - 15.45rem);
+}
+
+.presentation {
+  width: 50%;
+}
+
+.about-me {
+  width: 50%;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.about-me-content {
+  height: 28.8rem;
+}
+
+.about-me-paragraph {
+  font-size: 2.4rem;
 }
