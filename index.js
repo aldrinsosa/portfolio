@@ -5,6 +5,7 @@ const navAbout = document.querySelector(".navAbout");
 const navSkills = document.querySelector(".navSkills");
 const navProjects = document.querySelector(".navProjects");
 const navContact = document.querySelector(".navContact");
+var mediaqueryList = window.matchMedia("(min-width: 768px)");
 
 //Find the coords of the sections
 const sectionAboutMe = document.getElementById("about-me");
@@ -22,17 +23,32 @@ navToggle.addEventListener("click", () => {
 
 navAbout.addEventListener("click", () => {
   navMenu.classList.toggle("nav-menu_visible");
-  window.scrollTo( 0, posicionAboutMeTop - navHeight);
+  if(mediaqueryList.matches){
+    window.scrollTo( 0, posicionAboutMeTop - navHeight);
+  }
+  else{
+    window.scrollTo( 0, posicionAboutMeTop);
+  }
 }); 
 
 navSkills.addEventListener("click", () => {
   navMenu.classList.toggle("nav-menu_visible");
-  window.scrollTo( 0, posicionSkillsTop - navHeight);
+  if(mediaqueryList.matches){
+    window.scrollTo( 0, posicionSkillsTop - navHeight);
+  }
+  else{
+    window.scrollTo( 0, posicionSkillsTop);
+  }
 }); 
 
 navProjects.addEventListener("click", () => {
   navMenu.classList.toggle("nav-menu_visible");
-  window.scrollTo( 0, posicionProjectsTop - navHeight);
+  if(mediaqueryList.matches){
+    window.scrollTo( 0, posicionProjectsTop - navHeight);
+  }
+  else{
+    window.scrollTo( 0, posicionProjectsTop);
+  }
 });
 
 navContact.addEventListener("click", () => {
