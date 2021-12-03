@@ -93,6 +93,7 @@ a {
 
 .nav-menu_visible {
   top: 4.35rem;
+  z-index: 10;
 }
 
 .photo {
@@ -125,4 +126,18 @@ a {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.section-title {
+  position: relative;
+  width: 100%;
+  min-width: 32rem;
+  height: 12rem;
+}
+
+.pink-title {
+  background-color: var(--pink);
+}
+
+.about-me--title--text {
 }
