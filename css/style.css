@@ -96,6 +96,11 @@ a {
   z-index: 10;
 }
 
+.main-content {
+  display: flex;
+  flex-direction: column;
+}
+
 .photo {
   position: relative;
   width: 100%;
@@ -133,11 +138,38 @@ a {
   width: 100%;
   min-width: 32rem;
   height: 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .pink-title {
   background-color: var(--pink);
 }
 
-.about-me--title--text {
+.cobalt-title {
+  background-color: var(--cobalt);
+}
+
+.section-title-text {
+  font-size: 3.6rem;
+  font-weight: normal;
+  color: var(--white);
+}
+
+.about-me-content {
+  width: 100%;
+  min-width: 32rem;
+  height: 33.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me-paragraph {
+  width: 75%;
+  min-width: 25rem;
+  text-align: center;
+  font-size: 2.4rem;
+  color: var(--cobalt);
 }

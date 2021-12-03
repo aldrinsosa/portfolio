@@ -44,3 +44,11 @@
   font-size: 2rem;
   text-align: left;
 }
+
+.photo--imagen {
+  left: calc(25% - 16rem);
+}
+
+.photo--elipse {
+  left: calc(25% - 15.45rem);
+}
