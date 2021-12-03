@@ -38,6 +38,7 @@
 .nav-menu-link {
   font-size: 1.7rem;
   color: var(--white);
+  cursor: pointer;
 }
 .logo {
   width: 32rem;
