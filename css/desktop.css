@@ -47,6 +47,7 @@
 
 .main-content {
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .photo--imagen {
@@ -73,4 +74,16 @@
 
 .about-me-paragraph {
   font-size: 2.4rem;
+}
+
+.skills {
+  flex-direction: column-reverse;
+}
+
+.elipse2 {
+  left: calc(25% - 3.4rem);
+}
+
+.elipse3 {
+  right: calc(25% - 3.4rem);
 }

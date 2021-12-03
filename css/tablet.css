@@ -1,3 +1,15 @@
 .about-me-paragraph {
   font-size: 3rem;
 }
+
+.elipse2 {
+  top: calc(50% - 3.4rem);
+  left: calc(15% - 3.4rem);
+}
+
+.elipse3 {
+  top: calc(50% - 3.4rem);
+  right: calc(15% - 3.4rem);
+  min-width: 6.8rem;
+  background-image: url(../images/Ellipse4.svg);
+}
