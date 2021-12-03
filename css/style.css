@@ -65,6 +65,7 @@ a {
 .nav-menu-link {
   color: var(--cobalt);
   font-size: 3rem;
+  cursor: pointer;
 }
 
 .logo {
