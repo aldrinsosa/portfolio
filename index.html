@@ -38,7 +38,7 @@
             <a class="nav-menu-link navProjects">Projects</a>
           </li>
           <li class="nav-menu-item">
-            <a href="#" class="nav-menu-link navContact">Contact</a>
+            <a class="nav-menu-link navContact">Contact</a>
           </li>
         </ul>
         <h1 class="logo">ALDRIN SOSA</h1>
@@ -146,7 +146,57 @@
         <div class="section-title pink-title">
           <h2 class="section-title-text contact-text">Contact</h2>
         </div>
-        <div class="contact-content"></div>
+        <div class="contact-content">
+          <form
+            action="mailto:sosag@sosag.site"
+            method="post"
+            enctype="text/plain"
+            class="form-contact"
+          >
+            <div class="form-container">
+              <div class="form-left">
+                <img src="./images/enviar-correo.svg" alt="imagen de correo" />
+              </div>
+              <div class="form-right">
+                <h3 class="form-title">Let's talk</h3>
+                <label for="name">
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    id="name"
+                    name="name"
+                    class="form-input"
+                  />
+                </label>
+                <label for="email">
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    id="email"
+                    name="email"
+                    class="form-input"
+                  />
+                </label>
+                <label for="message">
+                  <textarea
+                    name="message"
+                    id="message"
+                    placeholder="Message"
+                    class="form-input form-text"
+                  ></textarea>
+                </label>
+                <label for="submit">
+                  <input
+                    type="submit"
+                    value="Submit"
+                    name="submit"
+                    class="form-input form-button"
+                  />
+                </label>
+              </div>
+            </div>
+          </form>
+        </div>
       </section>
     </main>
     <footer class="footer-content"></footer>

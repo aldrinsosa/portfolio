@@ -308,5 +308,80 @@ a {
 .contact-content {
   width: 100%;
   min-width: 32rem;
-  height: 100vh;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+}
+
+.form-contact {
+  height: fit-content;
+  align-self: center;
+}
+
+.form-container {
+  width: 90%;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  border: 8px solid var(--cobalt);
+}
+
+.form-left {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.form-left img {
+  min-width: 17rem;
+  width: 80%;
+  max-width: 35rem;
+  align-self: center;
+  height: 80%;
+  object-fit: contain;
+  margin-top: 2rem;
+}
+
+.form-right {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.form-right label {
+  padding: 0.5em 1em;
+}
+
+.form-input {
+  font-family: inherit;
+  color: var(--cobalt);
+  width: 100%;
+  padding: 0.8em 1em;
+  background: none;
+  border: 2px solid var(--cobalt);
+}
+
+.form-button {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0.5em 0.5em;
+  cursor: pointer;
+}
+
+.form-button:hover {
+  background: var(--cobalt);
+  color: var(--white);
+}
+
+.form-input::placeholder {
+  color: var(--cobalt);
+}
+
+.form-title {
+  text-align: center;
+  margin: 0.1em;
+  font-size: 3rem;
+  color: var(--cobalt);
+}
+.form-text {
+  resize: none;
 }
