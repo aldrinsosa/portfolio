@@ -309,7 +309,8 @@ a {
 .contact-content {
   width: 100%;
   min-width: 32rem;
-  height: 85vh;
+  height: 75vh;
+  margin-bottom: 4rem;
   display: flex;
   justify-content: center;
 }
@@ -324,7 +325,6 @@ a {
   margin: 2rem auto;
   display: flex;
   flex-direction: column;
-  border: 8px solid var(--cobalt);
 }
 
 .form-left {
@@ -340,7 +340,6 @@ a {
   align-self: center;
   height: 80%;
   object-fit: contain;
-  margin-top: 2rem;
 }
 
 .form-right {

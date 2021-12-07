@@ -120,7 +120,8 @@
   transition: inherit;
 }
 .contact-content {
-  height: 60vh;
+  height: 45vh;
+  margin: 0;
 }
 
 .form-contact {
