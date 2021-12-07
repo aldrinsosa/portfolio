@@ -39,6 +39,12 @@
   font-size: 1.7rem;
   color: var(--white);
 }
+
+.nav-menu-link:hover {
+  color: var(--turquoise);
+  opacity: 60%;
+}
+
 .logo {
   width: 32rem;
   align-self: center;
@@ -96,4 +102,20 @@
 
 .elipse3 {
   right: calc(25% - 3.4rem);
+}
+.projects-content {
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 24rem));
+}
+
+.projects-item a:hover .background {
+  transform: scale(1.1);
+  z-index: -1;
+}
+.projects-item a:hover .projects-image {
+  transform: scale(1.1);
+}
+
+.projects-item a:hover .projects-item-title {
+  display: none;
+  transition: inherit;
 }

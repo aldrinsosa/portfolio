@@ -24,6 +24,9 @@ var posicionSkillsTop = posicionTop(sectionSkills);
 const sectionProjects = document.getElementById("projects");
 var posicionProjectsTop = posicionTop(sectionProjects);
 
+const sectionContact = document.getElementById("contact");
+var posicionContactTop = posicionTop(sectionContact);
+
 //toggle the mode of the menu
 navToggle.addEventListener("click", () => {
   navMenu.classList.toggle("nav-menu_visible");
@@ -63,6 +66,12 @@ navProjects.addEventListener("click", () => {
 
 navContact.addEventListener("click", () => {
   navMenu.classList.toggle("nav-menu_visible");
+  if(mediaqueryList.matches){
+    window.scrollTo( 0, posicionContactTop - navHeight);
+  }
+  else{
+    window.scrollTo( 0, posicionContactTop);
+  }
 }); 
 
 //function to found the top cords of a div

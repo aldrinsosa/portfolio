@@ -241,5 +241,72 @@ a {
 .projects {
   width: 100%;
   min-width: 32rem;
+  height: auto;
+}
+
+.projects-content {
+  display: grid;
+  grid-template-columns: minmax(20rem, 28rem);
+  grid-auto-rows: 28rem;
+  justify-content: center;
+  gap: 5rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.projects-item {
+  position: relative;
+}
+
+.projects-item a {
+  transition: all 0.3s ease;
+}
+
+.projects-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: inherit;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 60%;
+  transition: inherit;
+}
+
+.background-cobalt {
+  background-color: var(--cobalt);
+}
+
+.background-pink {
+  background-color: var(--pink);
+}
+
+.projects-item-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  color: var(--white);
+  transition: inherit;
+}
+
+.contact {
+  width: 100%;
+  min-width: 32rem;
+}
+
+.contact-content {
+  width: 100%;
+  min-width: 32rem;
   height: 100vh;
 }
