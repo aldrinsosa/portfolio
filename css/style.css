@@ -24,6 +24,7 @@ body {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 .header-content {
@@ -384,4 +385,37 @@ a {
 }
 .form-text {
   resize: none;
+}
+
+.footer-content {
+  width: 100%;
+  min-width: 32rem;
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  background-color: var(--cobalt);
+  color: var(--white);
+}
+
+.social-list {
+  width: 25vw;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.copy-text {
+  padding: 1vh 1vw;
+  font-size: 1.5rem;
+}
+
+.social-item {
+  padding: 1vh 1vw;
+  font-size: 1.5rem;
+}
+
+.social-link:hover {
+  color: var(--turquoise);
 }
