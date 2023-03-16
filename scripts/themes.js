@@ -1,18 +1,16 @@
-let root = document.documentElement;
-let themeButton = document.getElementById("themeButton");
+//get the css variables the button and the menu
+const root = document.documentElement;
+const themeButton = document.getElementById("themeButton");
 
-let whiteLight = "#edf6f9";
-let cobaltLight= "#006d77";
-let pinkLight= "#e29578";
-let turquoiseLight= "#83c5be";
-let peachLight= "#ffddd2";
+const whiteLight = "#edf6f9";
+const cobaltLight= "#006d77";
+const pinkLight= "#e29578";
+const peachLight= "#ffddd2";
 
-let whiteDark= "#272a2b";
-let cobaltDark= "#04626b";
-let pinkDark= "#b0735b";
-
-let turquoiseDark= "#83c5be";
-let peachDark= "#9c857e";
+const whiteDark= "#272a2b";
+const cobaltDark= "#04626b";
+const pinkDark= "#b0735b";
+const peachDark= "#9c857e";
 
 if(!localStorage.getItem("theme")) {
   localStorage.setItem("theme","lightTheme");
@@ -26,6 +24,7 @@ else{
 };
 
 themeButton.addEventListener("click", () => {
+  navMenu.classList.toggle("nav-menu_visible");
   if (localStorage.getItem("theme") == "lightTheme") {
     setDark();
   } else {
@@ -36,24 +35,22 @@ themeButton.addEventListener("click", () => {
 function setDark(){
   //changes css variables
   root.style.setProperty("--cobalt", cobaltDark);
-  root.style.setProperty("--turquois", turquoiseDark);
   root.style.setProperty("--white", whiteDark);
   root.style.setProperty("--peach", peachDark);
   root.style.setProperty("--pink", pinkDark);
 
-  //changes the class
+  //changes the theme
   localStorage.setItem("theme","darkTheme");
 }
 
 function setLight(){
   //changes css variables
   root.style.setProperty("--cobalt", cobaltLight);
-  root.style.setProperty("--turquois", turquoiseLight);
   root.style.setProperty("--white", whiteLight);
   root.style.setProperty("--peach", peachLight);
   root.style.setProperty("--pink", pinkLight);
 
-  //changes the class
+  //changes the theme
   localStorage.setItem("theme","lightTheme");
 }
 
