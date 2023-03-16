@@ -8,21 +8,21 @@ const navHeight = 60;
 const navToggle = document.querySelector(".nav-toggle-button");
 const navMenu = document.querySelector(".nav-menu");
 
-//buttons in the nav
-const buttons = [
-  document.querySelector(".navAbout"),
-  document.querySelector(".navSkills"),
-  document.querySelector(".navProjects"),
-  document.querySelector(".navContact"),
-]
+//sections buttons
+const buttons = {
+  "About": document.querySelector(".navAbout"),
+  "Skills": document.querySelector(".navSkills"),
+  "Projects":document.querySelector(".navProjects"),
+  "Contact":document.querySelector(".navContact"),
+}
 
 //coords of each section
-const sections = [
-  positionTop(document.getElementById("about-me")), 
-  positionTop(document.getElementById("skills")), 
-  positionTop(document.getElementById("projects")), 
-  positionTop(document.getElementById("contact"))
-]
+const sections = {
+  "About":positionTop(document.getElementById("about-me")), 
+  "Skills":positionTop(document.getElementById("skills")), 
+  "Projects":positionTop(document.getElementById("projects")), 
+  "Contact":positionTop(document.getElementById("contact"))
+}
 
 //toggle the mode of the menu
 navToggle.addEventListener("click", () => {
@@ -30,9 +30,9 @@ navToggle.addEventListener("click", () => {
 });
 
 //make each button listen for clicks
-for (let i = 0; i < buttons.length; i++) {
-  buttons[i].addEventListener("click", () => {
-    scrollDown(sections[i]);
+for (let key in buttons) {
+  buttons[key].addEventListener("click", () => {
+    scrollDown(sections[key]);
   }); 
 }
 
