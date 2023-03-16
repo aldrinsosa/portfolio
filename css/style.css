@@ -289,6 +289,21 @@ a {
 }
 
 .projects-item-title {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  color: var(--white);
+  transition: inherit;
+}
+
+.projects-item-language {
+  display: none;
   position: absolute;
   top: 50%;
   left: 50%;

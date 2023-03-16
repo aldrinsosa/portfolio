@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/tab.png" ">
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/tablet.css" media="(min-width:500px)" />
     <link rel="stylesheet" href="./css/desktop.css" media="(min-width:768px)" />
@@ -16,7 +17,6 @@
       src="https://kit.fontawesome.com/cda1e6526d.js"
       crossorigin="anonymous"
     ></script>
-    <script defer src="./index.js"></script>
     <title>Aldrin Sosa - Web Portfolio</title>
   </head>
   <body>
@@ -39,6 +39,9 @@
           </li>
           <li class="nav-menu-item">
             <a class="nav-menu-link navContact">Contact</a>
+          </li>
+          <li class="nav-menu-item">
+            <i id ="themeButton" class="fa-solid fa-circle-half-stroke nav-menu-link"></i>
           </li>
         </ul>
         <h1 class="logo">ALDRIN SOSA</h1>
@@ -76,7 +79,8 @@
           <ul class="skills-list">
             <li class="skills-item">HTML</li>
             <li class="skills-item">Javascript</li>
-            <li class="skills-item">CSS</li>
+            <li class="skills-item">Python</li>
+            <li class="skills-item">CSS</li> 
           </ul>
         </section>
       </section>
@@ -93,51 +97,32 @@
                 alt="photo of the aldhyp project"
               />
               <div class="background background-cobalt"></div>
-              <p class="projects-item-title">Landing page for Aldhyp</p></a
-            >
+              <p class="projects-item-title">Landing page for Aldhyp</p>
+              <p class="projects-item-language">HTML<br> CSS</p>
+              </a>
           </div>
           <div class="projects-item">
             <a href="https://aldrinsosa.github.io/todo-list/" target="_blank"
               ><img
                 class="projects-image"
-                src="./images/todo-list-pw.png"
+                src="./images/todo-list.png"
                 alt="photo of the aldhyp project"
               />
               <div class="background background-pink"></div>
-              <p class="projects-item-title">Todo-List</p></a
-            >
+              <p class="projects-item-title">To-Do List</p>
+              <p class="projects-item-language">Javascript</p>
+            </a>
           </div>
           <div class="projects-item">
-            <a href="#"
+            <a href="https://sosag.pythonanywhere.com/login" target="_blank"
               ><img
                 class="projects-image"
                 src="./images/aldhyp-pv.png"
-                alt="photo of the aldhyp project"
+                alt="photo sports project"
               />
               <div class="background background-cobalt"></div>
-              <p class="projects-item-title">Project3</p></a
-            >
-          </div>
-          <div class="projects-item">
-            <a href="#"
-              ><img
-                class="projects-image"
-                src="./images/aldhyp-pv.png"
-                alt="photo of the aldhyp project"
-              />
-              <div class="background background-pink"></div>
-              <p class="projects-item-title">Project4</p></a
-            >
-          </div>
-          <div class="projects-item">
-            <a href="#"
-              ><img
-                class="projects-image"
-                src="./images/aldhyp-pv.png"
-                alt="photo of the aldhyp project"
-              />
-              <div class="background background-cobalt"></div>
-              <p class="projects-item-title">Project5</p></a
+              <p class="projects-item-title">Sports Registration</p>
+              <p class="projects-item-language">Python</p></a
             >
           </div>
         </div>
@@ -210,22 +195,6 @@
               ><i class="fab fa-github"></i
             ></a>
           </li>
-          <li class="social-item">
-            <a
-              href="#"
-              target="_blank"
-              class="social-link"
-              ><i class="fab fa-instagram"></i>
-            </a>
-          </li>
-          <li class="social-item">
-            <a
-              href="#"
-              target="_blank"
-              class="social-link"
-            >
-              <i class="fab fa-twitter"></i>
-            </a>
           </li>
           <li class="social-item">
             <a
@@ -238,5 +207,7 @@
         </ul>
       </div>
     </footer>
+    <script src="./scripts/index.js"></script>
+    <script src="./scripts/themes.js"></script>
   </body>
 </html>

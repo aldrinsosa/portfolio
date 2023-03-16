@@ -1,5 +1,5 @@
 //media queries
-var mediaqueryList = window.matchMedia("(min-width: 768px)");
+let mediaqueryList = window.matchMedia("(min-width: 768px)");
 
 //Height of the nav
 const navHeight = 60;
@@ -16,16 +16,16 @@ const navContact = document.querySelector(".navContact");
 
 //Find the coords of the sections
 const sectionAboutMe = document.getElementById("about-me");
-var posicionAboutMeTop = posicionTop(sectionAboutMe);
+let posicionAboutMeTop = posicionTop(sectionAboutMe);
 
 const sectionSkills = document.getElementById("skills");
-var posicionSkillsTop = posicionTop(sectionSkills); 
+let posicionSkillsTop = posicionTop(sectionSkills); 
 
 const sectionProjects = document.getElementById("projects");
-var posicionProjectsTop = posicionTop(sectionProjects);
+let posicionProjectsTop = posicionTop(sectionProjects);
 
 const sectionContact = document.getElementById("contact");
-var posicionContactTop = posicionTop(sectionContact);
+let posicionContactTop = posicionTop(sectionContact);
 
 //toggle the mode of the menu
 navToggle.addEventListener("click", () => {
@@ -76,7 +76,7 @@ navContact.addEventListener("click", () => {
 
 //function to found the top cords of a div
 function posicionTop (section){
-  var posicion = section.getBoundingClientRect();
-  var posicionTop = posicion.top + scrollY; 
+  let posicion = section.getBoundingClientRect();
+  let posicionTop = posicion.top + scrollY; 
   return posicionTop;
 }

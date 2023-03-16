@@ -18,7 +18,7 @@
   position: relative;
   top: 0;
   left: 0;
-  width: 35rem;
+  width: 45rem;
   height: auto;
   overflow-x: hidden;
   justify-content: space-between;
@@ -26,7 +26,6 @@
   background-color: transparent;
   transition: 0s;
   margin-top: 1.6rem;
-  margin-right: 1.1rem;
 }
 .nav-menu-item {
   width: 10rem;
@@ -97,11 +96,11 @@
 }
 
 .elipse2 {
-  left: calc(25% - 3.4rem);
+  left: calc(12.5%);
 }
 
 .elipse3 {
-  right: calc(25% - 3.4rem);
+  right: calc(12.5%);
 }
 .projects-content {
   grid-template-columns: repeat(auto-fit, minmax(20rem, 24rem));
@@ -109,10 +108,14 @@
 
 .projects-item a:hover .background {
   transform: scale(1.1);
-  z-index: -1;
 }
 .projects-item a:hover .projects-image {
   transform: scale(1.1);
+}
+.projects-item a:hover .projects-item-language {
+  display: inline-block;
+  text-shadow: 2px 2px 8px rgba(8, 8, 8, 0.336);
+  transition: inherit;
 }
 
 .projects-item a:hover .projects-item-title {
